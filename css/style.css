@@ -287,7 +287,19 @@ span.nav-menus-wrapper-close-button {
     background: #fff0 linear-gradient(180deg, #191e2d 0%, #0a0214 100%) 0% 0% no-repeat padding-box !important;
     box-shadow: 0 10px 20px rgb(0 0 0 / .075) !important;
     right: 0 !important;
-    max-width: 100% !important
+    max-width: 100% !important;
+    display: block !important;
+    opacity: 1 !important;
+    /* visibility: visible !important; */
+    /* pointer-events: all !important; */
+    clip-path: inset(0 0 100% 0);
+    transition: clip-path 0.3s ease !important;
+}
+
+.header_area .navigation_menu .mega-menu-wrap .mega-menu>.mega-menu-item:hover>.mega-sub-menu {
+    clip-path: inset(0 0 0 0) !important;
+    visibility: visible !important;
+    pointer-events: all !important;
 }
 
 .header_area .navigation_menu .mega-menu-wrap .mega-menu>.mega-menu-item>.mega-sub-menu>.mega-menu-row li ul li {
@@ -5811,7 +5823,8 @@ body {
     border: none;
 }
 
-.pricing_main .pricing_table tr th, .pricing_main .pricing_table tr td {
+.pricing_main .pricing_table tr th,
+.pricing_main .pricing_table tr td {
     padding: 10px 15px;
     text-align: center;
     vertical-align: middle;
@@ -5839,19 +5852,22 @@ body {
     top: -5px;
 }
 
-.basic_table .table_heading .table_border, .basic_table .table_price_box {
+.basic_table .table_heading .table_border,
+.basic_table .table_price_box {
     background: rgb(65, 171, 250);
     background: linear-gradient(90deg, rgba(65, 171, 250, 1) 0%, rgba(65, 120, 250, 1) 100%);
 }
 
-.eco_table .table_heading .table_border, .eco_table .table_price_box {
-    background: rgb(247,139,6);
-    background: linear-gradient(90deg, rgba(247,139,6,1) 0%, rgba(247,183,49,1) 100%);
+.eco_table .table_heading .table_border,
+.eco_table .table_price_box {
+    background: rgb(247, 139, 6);
+    background: linear-gradient(90deg, rgba(247, 139, 6, 1) 0%, rgba(247, 183, 49, 1) 100%);
 }
 
-.pro_table .table_heading .table_border, .pro_table .table_price_box {
-    background: rgb(27,143,38);
-    background: linear-gradient(90deg, rgba(27,143,38,1) 0%, rgba(38,222,129,1) 100%);
+.pro_table .table_heading .table_border,
+.pro_table .table_price_box {
+    background: rgb(27, 143, 38);
+    background: linear-gradient(90deg, rgba(27, 143, 38, 1) 0%, rgba(38, 222, 129, 1) 100%);
 }
 
 .table_price_box {
@@ -5869,7 +5885,8 @@ body {
     line-height: 30px;
 }
 
-.table_price_box h2 .table_price_icon, .table_price_box h2 .table_price_per {
+.table_price_box h2 .table_price_icon,
+.table_price_box h2 .table_price_per {
     font-size: 30px;
 }
 
@@ -5881,7 +5898,8 @@ body {
     background-color: #f1f1f1;
 }
 
-.pricing_main .pricing_table tbody tr:first-child, .pricing_main .pricing_table tbody tr:last-child {
+.pricing_main .pricing_table tbody tr:first-child,
+.pricing_main .pricing_table tbody tr:last-child {
     border-bottom: none;
 }
 
@@ -5890,7 +5908,8 @@ body {
     padding-top: 30px;
 }
 
-.pricing_main .pricing_table tbody tr th:first-child, .pricing_main .pricing_table tbody tr td:first-child {
+.pricing_main .pricing_table tbody tr th:first-child,
+.pricing_main .pricing_table tbody tr td:first-child {
     white-space: unset;
 }
 
@@ -5960,23 +5979,23 @@ body {
     display: none;
 }
 
-.tablstabs input[type=radio]:checked + label {
+.tablstabs input[type=radio]:checked+label {
     color: #8a00f9;
 }
 
-.tablstabs input[id=radio-1]:checked ~ .glider {
+.tablstabs input[id=radio-1]:checked~.glider {
     transform: translateX(0);
 }
 
-.tablstabs input[id=radio-2]:checked ~ .glider {
+.tablstabs input[id=radio-2]:checked~.glider {
     transform: translateX(100%);
 }
 
-.tablstabs input[id=radio-mobile-1]:checked ~ .glider {
+.tablstabs input[id=radio-mobile-1]:checked~.glider {
     transform: translateX(0);
 }
 
-.tablstabs input[id=radio-mobile-2]:checked ~ .glider {
+.tablstabs input[id=radio-mobile-2]:checked~.glider {
     transform: translateX(100%);
 }
 
@@ -6058,17 +6077,20 @@ span.free_pricing_bg {
     margin: 0 auto;
 }
 
-.pricing_main_basic .pricing_heading::after, .pricing_main_basic .priceing_price h2 {
+.pricing_main_basic .pricing_heading::after,
+.pricing_main_basic .priceing_price h2 {
     background: rgb(65, 171, 250);
     background: linear-gradient(90deg, rgba(65, 171, 250, 1) 0%, rgba(65, 120, 250, 1) 100%);
 }
 
-.pricing_main_eco .pricing_heading::after, .pricing_main_eco .priceing_price h2 {
+.pricing_main_eco .pricing_heading::after,
+.pricing_main_eco .priceing_price h2 {
     background: rgb(247, 139, 6);
     background: linear-gradient(90deg, rgba(247, 139, 6, 1) 0%, rgba(247, 183, 49, 1) 100%);
 }
 
-.pricing_main_pro .pricing_heading::after, .pricing_main_pro .priceing_price h2 {
+.pricing_main_pro .pricing_heading::after,
+.pricing_main_pro .priceing_price h2 {
     background: rgb(27, 143, 38);
     background: linear-gradient(90deg, rgba(27, 143, 38, 1) 0%, rgba(38, 222, 129, 1) 100%);
 }
@@ -6145,18 +6167,19 @@ span.free_pricing_bg {
     display: none;
 }
 
-@media only screen and ( min-width: 1280px ) and ( max-width: 1400px ) {
+@media only screen and (min-width: 1280px) and (max-width: 1400px) {
     ._sign_reg_btn {
         margin-right: 15px;
     }
 }
 
-@media only screen and ( min-width: 992px ) and ( max-width: 1199px ) {
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
     .table_heading h5 {
         white-space: nowrap;
     }
 
-    .pricing_main .pricing_table tr th, .pricing_main .pricing_table tr td {
+    .pricing_main .pricing_table tr th,
+    .pricing_main .pricing_table tr td {
         white-space: unset;
     }
 
@@ -6169,27 +6192,27 @@ span.free_pricing_bg {
     }
 }
 
-@media only screen and ( min-width: 1025px ) and ( max-width: 1072px ) {
+@media only screen and (min-width: 1025px) and (max-width: 1072px) {
     .nav-menu>li>a {
         font-size: 15px;
     }
 }
 
-@media only screen and ( min-width: 993px ) and ( max-width: 1023px ) {
+@media only screen and (min-width: 993px) and (max-width: 1023px) {
     ._sign_reg_btn {
         margin-right: 15px;
         white-space: nowrap;
     }
 }
 
-@media only screen and ( min-width: 971px ) and ( max-width: 992px ) {
+@media only screen and (min-width: 971px) and (max-width: 992px) {
     ._sign_reg_btn {
         margin-right: 60px;
         white-space: nowrap;
     }
 }
 
-@media only screen and ( max-width: 991px ) {
+@media only screen and (max-width: 991px) {
     .pricng_table_wrapp_mobile {
         display: block;
     }
@@ -6199,8 +6222,10 @@ span.free_pricing_bg {
     }
 }
 
-@media only screen and ( min-width: 768px ) and ( max-width: 991px ) {
-    /* .pricing_main_wrapp .pricing_main { gap: 20px 10px; } */ .pricing_box .pricing_listing li {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    /* .pricing_main_wrapp .pricing_main { gap: 20px 10px; } */
+    .pricing_box .pricing_listing li {
         padding: 10px;
         font-size: 13px;
     }
@@ -6233,19 +6258,22 @@ span.free_pricing_bg {
 /* @media only screen and ( max-width: 576px ) {
 .pricing_main_wrapp .pricing_main { grid-template-columns: 1fr; }
 } */
-@media only screen and ( max-width: 445px ) {
+@media only screen and (max-width: 445px) {
     .tablstabs {
         transform: scale(0.9);
         max-width: max-content;
     }
 
-    .tablstabs label.tab, .tablstabs .glider {
+    .tablstabs label.tab,
+    .tablstabs .glider {
         width: 170px;
     }
 }
 
-@media only screen and ( max-width: 375px ) {
-    .tablstabs label.tab, .tablstabs .glider {
+@media only screen and (max-width: 375px) {
+
+    .tablstabs label.tab,
+    .tablstabs .glider {
         width: 135px;
     }
 }
@@ -6376,9 +6404,9 @@ span.free_pricing_bg {
     border-width: 1px;
 }
 
-.vc_tta.vc_general .vc_tta-panel.vc_active .vc_tta-panel-body {
+/* .vc_tta.vc_general .vc_tta-panel.vc_active .vc_tta-panel-body {
     display: block;
-}
+} */
 
 .vc_tta-color-grey.vc_tta-style-modern .vc_tta-panel .vc_tta-panel-heading {
     border-color: #f0f0f0;

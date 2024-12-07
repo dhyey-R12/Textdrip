@@ -1,11 +1,11 @@
-jQuery(document).ready(function($) {
-    jQuery('#calendlyList').on('change', function() {
+jQuery(document).ready(function ($) {
+    jQuery('#calendlyList').on('change', function () {
         var selectedLabel = $(this).find('option:selected').text();
         var cleanedText = selectedLabel.split(' - ')[0];
         jQuery('#industry_label').val(cleanedText)
     })
 });
-jQuery(document).ready(function($) {
+jQuery(document).ready(function ($) {
     "use strict";
     $("#customers-testimonials").owlCarousel({
         loop: !0,
@@ -17,7 +17,7 @@ jQuery(document).ready(function($) {
         nav: !0,
         autoplayTimeout: 8500,
         smartSpeed: 450,
-        navText: ['<i class="fa fa-long-arrow-left arrow_design"></i>', '<i class="fa fa-long-arrow-right arrow_design"></i>', ],
+        navText: ['<i class="fa fa-long-arrow-left arrow_design"></i>', '<i class="fa fa-long-arrow-right arrow_design"></i>',],
         responsive: {
             0: {
                 items: 1,
@@ -34,17 +34,17 @@ jQuery(document).ready(function($) {
         },
     })
 });
-jQuery(document).ready(function($) {
+jQuery(document).ready(function ($) {
     "use strict";
-    $(".navbar-light .dmenu").hover(function() {
+    $(".navbar-light .dmenu").hover(function () {
         $(this).find(".sm-menu").first().stop(!0, !0).slideDown(150)
-    }, function() {
+    }, function () {
         $(this).find(".sm-menu").first().stop(!0, !0).slideUp(105)
     })
 });
-jQuery(document).ready(function($) {
+jQuery(document).ready(function ($) {
     "use strict";
-    $(window).on("scroll", function() {
+    $(window).on("scroll", function () {
         if ($(window).scrollTop() > 100) {
             $(".main_header").addClass("active-header")
         } else {
@@ -52,10 +52,10 @@ jQuery(document).ready(function($) {
         }
     })
 });
-jQuery(document).ready(function($) {
+jQuery(document).ready(function ($) {
     "use strict";
     $("#load-more-feature-posts").attr("data-page", 1);
-    $("#load-more-feature-posts").on("click", function() {
+    $("#load-more-feature-posts").on("click", function () {
         var button = $(this);
         var page = button.data("page");
         var nextPage = page + 1;
@@ -66,10 +66,10 @@ jQuery(document).ready(function($) {
                 page: nextPage,
             },
             type: "POST",
-            beforeSend: function() {
+            beforeSend: function () {
                 button.text("Loading").addClass("loading-dots")
             },
-            success: function(response) {
+            success: function (response) {
                 if ($.trim(response)) {
                     $("#feature-posts-container").append(response);
                     button.data("page", nextPage);
@@ -82,9 +82,9 @@ jQuery(document).ready(function($) {
         })
     })
 });
-jQuery(".dropdown").hover(function() {
+jQuery(".dropdown").hover(function () {
     jQuery(this).find(".dropdown-menu").stop(!0, !0).delay(200).fadeIn(500)
-}, function() {
+}, function () {
     jQuery(this).find(".dropdown-menu").stop(!0, !0).delay(200).fadeOut(500)
 });
 const items = document.querySelectorAll(".accordion button");
@@ -99,11 +99,11 @@ function toggleAccordion() {
     }
 }
 items.forEach((item) => item.addEventListener("click", toggleAccordion));
-const AnimateOnScroll = function({
+const AnimateOnScroll = function ({
     offset
 } = {
-    offset: 10
-}) {
+        offset: 10
+    }) {
     const windowTop = (offset * window.innerHeight) / 100;
     const windowBottom = window.innerHeight - windowTop;
     const windowLeft = 0;
@@ -149,12 +149,12 @@ const options = {
     offset: 15
 };
 const animation = new AnimateOnScroll(options);
-jQuery(document).ready(function($) {
+jQuery(document).ready(function ($) {
     "use strict";
     if ($(window).scrollTop() > 100) {
         $("#navigation1").addClass("active-header")
     }
-    $(window).on("scroll", function() {
+    $(window).on("scroll", function () {
         if ($(window).scrollTop() > 100) {
             $("#navigation1").addClass("active-header")
         } else {
@@ -162,9 +162,9 @@ jQuery(document).ready(function($) {
         }
     })
 });
-jQuery(document).ready(function($) {
+jQuery(document).ready(function ($) {
     "use strict";
-    $(window).on("scroll", function() {
+    $(window).on("scroll", function () {
         if ($(window).scrollTop() > 100) {
             $(".logo_image").addClass("active_logo_img");
             $("nav .navbar .links li .sub-menu").addClass("submenu-70");
@@ -176,11 +176,11 @@ jQuery(document).ready(function($) {
         }
     })
 });
-jQuery(document).ready(function($) {
+jQuery(document).ready(function ($) {
     "use strict";
     $(".owl-carousel.testimonial-carousel").owlCarousel({
         nav: !0,
-        navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>', ],
+        navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>',],
         dots: !1,
         responsive: {
             0: {
@@ -192,9 +192,9 @@ jQuery(document).ready(function($) {
         },
     })
 });
-jQuery(document).ready(function($) {
+jQuery(document).ready(function ($) {
     "use strict";
-    $(document).on("scroll", function() {
+    $(document).on("scroll", function () {
         var pageTop = $(document).scrollTop();
         var pageBottom = pageTop + $(window).height();
         var tags = $(".fadein");
@@ -210,10 +210,10 @@ jQuery(document).ready(function($) {
 });
 
 function counter() {
-    jQuery(document).ready(function($) {
+    jQuery(document).ready(function ($) {
         "use strict";
-        $(".count").each(function() {
-            console.log('this',this);
+        $(".count").each(function () {
+            console.log('this', this);
             if ($(this).hasClass("start")) {
                 var elementTop = $(this).offset().top;
                 var elementBottom = elementTop + $(this).outerHeight();
@@ -230,7 +230,7 @@ function counter() {
                     }, {
                         duration: 4000,
                         easing: "swing",
-                        step: function(now) {
+                        step: function (now) {
                             var displayValue = parseFloat(now).toFixed(decimalpoint).toLocaleString("en");
                             $(this).text(isPercentage ? displayValue + "%" : displayValue + "+")
                         },
@@ -242,7 +242,7 @@ function counter() {
 }
 jQuery(document).ready(counter);
 jQuery(window).on("scroll", counter);
-jQuery(document).ready(function($) {
+jQuery(document).ready(function ($) {
     "use strict"
 });
 
@@ -276,7 +276,7 @@ function closeModal() {
 // });
 
 function copyToClipboard(element) {
-    jQuery(document).ready(function($) {
+    jQuery(document).ready(function ($) {
         "use strict";
         var $temp = $("<input>");
         var copiedDiv = $('<div class="popup-box__text">Copied</div>');
@@ -284,9 +284,9 @@ function copyToClipboard(element) {
         $temp.val($(element).text()).select();
         document.execCommand("copy");
         $temp.remove();
-        $(".benefits_detalis_box .btn_benefits_ button").on("click", function() {
+        $(".benefits_detalis_box .btn_benefits_ button").on("click", function () {
             $(this).after(copiedDiv);
-            $(copiedDiv).fadeIn().delay(1000).fadeOut(function() {
+            $(copiedDiv).fadeIn().delay(1000).fadeOut(function () {
                 $(this).remove()
             })
         })
@@ -630,21 +630,21 @@ function copyToClipboard(element) {
 //         $.validator.addMethod(name, params[0], params[1])
 //     })
 // });
-jQuery(document).ready(function($) {
+jQuery(document).ready(function ($) {
     "use strict";
-    $(".testimonial .indicators li").click(function() {
+    $(".testimonial .indicators li").click(function () {
         var i = $(this).index();
         var targetElement = $(".testimonial .tabs li");
         targetElement.eq(i).addClass("active");
         targetElement.not(targetElement[i]).removeClass("active")
     });
-    $(".testimonial .carousel-indicators.tabs li").click(function() {
+    $(".testimonial .carousel-indicators.tabs li").click(function () {
         var targetElement = $(".testimonial .tabs li");
         targetElement.addClass("active");
         targetElement.not($(this)).removeClass("active")
     })
 });
-jQuery(document).ready(function($) {
+jQuery(document).ready(function ($) {
     "use strict";
     $("#mdh-carousel .owl-carousel").owlCarousel({
         loop: !0,
@@ -655,7 +655,7 @@ jQuery(document).ready(function($) {
         dots: !0,
         autoplayTimeout: 8500,
         smartSpeed: 450,
-        navText: ['<i class="fa fa-long-arrow-left arrow_design"></i>', '<i class="fa fa-long-arrow-right arrow_design"></i>', ],
+        navText: ['<i class="fa fa-long-arrow-left arrow_design"></i>', '<i class="fa fa-long-arrow-right arrow_design"></i>',],
         responsive: {
             0: {
                 items: 1,
@@ -672,7 +672,7 @@ jQuery(document).ready(function($) {
         },
     })
 });
-jQuery(document).ready(function($) {
+jQuery(document).ready(function ($) {
     "use strict";
     $("#guide-modal").addClass("show").css("display", "block");
 
@@ -689,22 +689,41 @@ jQuery(document).ready(function($) {
     $("#toggle-icon-button .guidbtn").on("click", gridviewpopup)
 });
 AOS.init();
-jQuery(document).ready(function($) {
+jQuery(document).ready(function ($) {
     "use strict";
-    $(".second_part").click(function() {
+    $(".second_part").click(function () {
         $(".tabs-2").removeClass("d-none");
         $(".tabs-1").addClass("d-none")
     });
-    $(".first_part").click(function() {
+    $(".first_part").click(function () {
         $(".tabs-2").addClass("d-none");
         $(".tabs-1").removeClass("d-none")
     })
 });
-jQuery(document).ready(function($) {
+jQuery(document).ready(function ($) {
     "use strict";
-    $("#modal-subscribe, #modal-enterprise-plan").on("hidden.bs.modal", function() {
+    $("#modal-subscribe, #modal-enterprise-plan").on("hidden.bs.modal", function () {
         var form = $(this).find("form");
         form[0].reset();
         form.find("label.error").remove()
     })
+
+    // ACCORDION JS
+    jQuery(".vc_tta-panel:first-child").addClass('vc_active');
+    jQuery(".vc_tta-panel:first-child .vc_tta-panel-body").show();
+    jQuery('.vc_tta-panel-title').click(function (e) {
+        e.preventDefault();
+
+        // let $this = jQuery(this).find('.faq_accordion');
+
+        if (jQuery(this).parents('.vc_tta-panel').hasClass('vc_active')) {
+            jQuery(this).parents('.vc_tta-panel').removeClass('vc_active');
+            jQuery(this).parents('.vc_tta-panel-heading').next().slideUp(350);
+        } else {
+            jQuery(this).parents('.vc_tta-panels-container').find('.vc_tta-panel').removeClass('vc_active');
+            jQuery(this).parents('.vc_tta-panels-container').find('.vc_tta-panel-body').slideUp(350);
+            jQuery(this).parents('.vc_tta-panel').toggleClass('vc_active');
+            jQuery(this).parents('.vc_tta-panel-heading').next().slideToggle(350);
+        }
+    });
 });
