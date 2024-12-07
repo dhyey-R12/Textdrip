@@ -213,6 +213,7 @@ function counter() {
     jQuery(document).ready(function($) {
         "use strict";
         $(".count").each(function() {
+            console.log('this',this);
             if ($(this).hasClass("start")) {
                 var elementTop = $(this).offset().top;
                 var elementBottom = elementTop + $(this).outerHeight();

@@ -6294,3 +6294,171 @@ span.free_pricing_bg {
     background-repeat: no-repeat !important;
     background-size: cover !important;
 }
+
+@media (min-width:768px) {
+    .vc_tta.vc_tta-style-classic.vc_tta-tabs .vc_tta-panels {
+        border: 1px solid transparent
+    }
+
+    .vc_tta.vc_tta-style-classic.vc_tta-tabs .vc_tta-panel {
+        margin: -1px
+    }
+}
+
+.vc_tta.vc_tta-style-modern .vc_tta-panel-body,
+.vc_tta.vc_tta-style-modern .vc_tta-panel-heading {
+    border-width: 1px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, .2) 0, rgba(255, 255, 255, .01) 100%);
+    background-repeat: repeat-x
+}
+
+.vc_tta.vc_tta-style-modern .vc_tta-panel.vc_active+.vc_tta-panel .vc_tta-panel-heading,
+.vc_tta.vc_tta-style-modern .vc_tta-panel:not(:first-child) .vc_tta-panel-heading {
+    margin-top: -1px
+}
+
+.vc_tta.vc_tta-style-modern .vc_tta-panel.vc_active .vc_tta-panel-heading,
+.vc_tta.vc_tta-style-modern .vc_tta-panel:not(:last-child) .vc_tta-panel-heading {
+    margin-bottom: -1px
+}
+
+.vc_tta.vc_tta-style-modern .vc_tta-tabs-list {
+    padding-left: 1px;
+    padding-top: 1px
+}
+
+.vc_tta.vc_tta-style-modern .vc_tta-tab {
+    margin-left: -1px;
+    margin-top: -1px
+}
+
+.vc_tta.vc_tta-style-modern .vc_tta-tab>a {
+    border-width: 1px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, .2) 0, rgba(255, 255, 255, .01) 100%);
+    background-repeat: repeat-x
+}
+
+.vc_tta.vc_tta-style-modern .vc_tta-tab.vc_active>a {
+    background-clip: border-box
+}
+
+.vc_non_responsive .vc_tta.vc_tta-style-modern.vc_tta-tabs .vc_tta-panels,
+.vc_tta-o-non-responsive .vc_tta.vc_tta-style-modern.vc_tta-tabs .vc_tta-panels {
+    border: 1px solid transparent
+}
+
+.vc_non_responsive .vc_tta.vc_tta-style-modern.vc_tta-tabs .vc_tta-panel,
+.vc_tta-o-non-responsive .vc_tta.vc_tta-style-modern.vc_tta-tabs .vc_tta-panel {
+    margin: -1px
+}
+
+@media (min-width:768px) {
+    .vc_tta.vc_tta-style-modern.vc_tta-tabs .vc_tta-panels {
+        border: 1px solid transparent
+    }
+
+    .vc_tta.vc_tta-style-modern.vc_tta-tabs .vc_tta-panel {
+        margin: -1px
+    }
+}
+
+
+.vc_tta.vc_general .vc_tta-panel-body {
+    border: solid transparent;
+    box-sizing: content-box;
+    padding: 14px 20px;
+    display: none;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+    transition: padding .2s ease-in-out;
+    background-color: #f8f8f8;
+    border-color: #f0f0f0;
+    border-width: 1px;
+}
+
+.vc_tta.vc_general .vc_tta-panel.vc_active .vc_tta-panel-body {
+    display: block;
+}
+
+.vc_tta-color-grey.vc_tta-style-modern .vc_tta-panel .vc_tta-panel-heading {
+    border-color: #f0f0f0;
+    background-color: #f8f8f8;
+}
+
+.vc_tta.vc_general .vc_tta-panel-title {
+    margin: 0;
+    line-height: 1;
+}
+
+.vc_tta .vc_tta-controls-icon.vc_tta-controls-icon-plus::before {
+    content: '';
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-style: solid;
+    border-width: 2px 0 0 0
+}
+
+.vc_tta .vc_tta-controls-icon.vc_tta-controls-icon-plus::after {
+    content: '';
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    left: 50%;
+    bottom: 0;
+    top: 0;
+    transform: translateX(-50%);
+    border-style: solid;
+    border-width: 0 0 0 2px
+}
+
+.vc_tta .vc_tta-controls-icon.vc_tta-controls-icon-chevron::before {
+    content: '';
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    left: 2px;
+    right: 2px;
+    top: 2px;
+    bottom: 2px;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg) translate(-25%, -25%)
+}
+
+.vc_tta .vc_tta-controls-icon.vc_tta-controls-icon-triangle::before {
+    content: '';
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-style: solid;
+    border-width: 6px;
+    border-bottom-color: transparent !important;
+    border-right-color: transparent !important;
+    border-left-color: transparent !important;
+    transform: translateY(25%)
+}
+
+.vc_tta .vc_active .vc_tta-controls-icon.vc_tta-controls-icon-plus::after {
+    display: none
+}
+
+.vc_tta .vc_active .vc_tta-controls-icon.vc_tta-controls-icon-chevron::before {
+    transform: rotate(225deg) translate(-25%, -25%)
+}
+
+.vc_tta .vc_active .vc_tta-controls-icon.vc_tta-controls-icon-triangle::before {
+    transform: rotate(180deg) translateY(25%)
+}
+
+.mega-indicator::after {
+    font-size: 0;
+}

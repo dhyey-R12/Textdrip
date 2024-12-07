@@ -6423,7 +6423,7 @@ form.submitting .wpcf7-spinner {
   }
 }
 
-#mega-menu-wrap-max_mega_menu_1 #mega-menu-max_mega_menu_1 li.mega-menu-item-has-children>a.mega-menu-link>span.mega-indicator {
+#mega-menu-wrap-max_mega_menu_1 #mega-menu-max_mega_menu_1 li.mega-menu-item-has-children>a.mega-menu-link>span.fa fa-chevron-down mega-indicator {
   display: inline-block;
   width: auto;
   background: #fff0;
@@ -6439,7 +6439,7 @@ form.submitting .wpcf7-spinner {
   color: inherit
 }
 
-#mega-menu-wrap-max_mega_menu_1 #mega-menu-max_mega_menu_1 li.mega-menu-item-has-children>a.mega-menu-link>span.mega-indicator:after {
+#mega-menu-wrap-max_mega_menu_1 #mega-menu-max_mega_menu_1 li.mega-menu-item-has-children>a.mega-menu-link>span.fa fa-chevron-down mega-indicator:after {
   content: "";
   font-family: dashicons;
   font-weight: 400;
@@ -6458,35 +6458,35 @@ form.submitting .wpcf7-spinner {
   line-height: inherit
 }
 
-#mega-menu-wrap-max_mega_menu_1 #mega-menu-max_mega_menu_1 li.mega-menu-item-has-children li.mega-menu-item-has-children>a.mega-menu-link>span.mega-indicator {
+#mega-menu-wrap-max_mega_menu_1 #mega-menu-max_mega_menu_1 li.mega-menu-item-has-children li.mega-menu-item-has-children>a.mega-menu-link>span.fa fa-chevron-down mega-indicator {
   float: right
 }
 
-#mega-menu-wrap-max_mega_menu_1 #mega-menu-max_mega_menu_1 li.mega-menu-item-has-children.mega-collapse-children.mega-toggle-on>a.mega-menu-link>span.mega-indicator:after {
+#mega-menu-wrap-max_mega_menu_1 #mega-menu-max_mega_menu_1 li.mega-menu-item-has-children.mega-collapse-children.mega-toggle-on>a.mega-menu-link>span.fa fa-chevron-down mega-indicator:after {
   content: ""
 }
 
 @media only screen and (max-width:768px) {
-  #mega-menu-wrap-max_mega_menu_1 #mega-menu-max_mega_menu_1 li.mega-menu-item-has-children>a.mega-menu-link>span.mega-indicator {
+  #mega-menu-wrap-max_mega_menu_1 #mega-menu-max_mega_menu_1 li.mega-menu-item-has-children>a.mega-menu-link>span.fa fa-chevron-down mega-indicator {
     float: right
   }
 
-  #mega-menu-wrap-max_mega_menu_1 #mega-menu-max_mega_menu_1 li.mega-menu-item-has-children.mega-toggle-on>a.mega-menu-link>span.mega-indicator:after {
+  #mega-menu-wrap-max_mega_menu_1 #mega-menu-max_mega_menu_1 li.mega-menu-item-has-children.mega-toggle-on>a.mega-menu-link>span.fa fa-chevron-down mega-indicator:after {
     content: ""
   }
 
-  #mega-menu-wrap-max_mega_menu_1 #mega-menu-max_mega_menu_1 li.mega-menu-item-has-children.mega-hide-sub-menu-on-mobile>a.mega-menu-link>span.mega-indicator {
+  #mega-menu-wrap-max_mega_menu_1 #mega-menu-max_mega_menu_1 li.mega-menu-item-has-children.mega-hide-sub-menu-on-mobile>a.mega-menu-link>span.fa fa-chevron-down mega-indicator {
     display: none
   }
 }
 
-#mega-menu-wrap-max_mega_menu_1 #mega-menu-max_mega_menu_1 li.mega-menu-megamenu:not(.mega-menu-tabbed) li.mega-menu-item-has-children:not(.mega-collapse-children)>a.mega-menu-link>span.mega-indicator,
-#mega-menu-wrap-max_mega_menu_1 #mega-menu-max_mega_menu_1 li.mega-menu-item-has-children.mega-hide-arrow>a.mega-menu-link>span.mega-indicator {
+#mega-menu-wrap-max_mega_menu_1 #mega-menu-max_mega_menu_1 li.mega-menu-megamenu:not(.mega-menu-tabbed) li.mega-menu-item-has-children:not(.mega-collapse-children)>a.mega-menu-link>span.fa fa-chevron-down mega-indicator,
+#mega-menu-wrap-max_mega_menu_1 #mega-menu-max_mega_menu_1 li.mega-menu-item-has-children.mega-hide-arrow>a.mega-menu-link>span.fa fa-chevron-down mega-indicator {
   display: none
 }
 
 @media only screen and (min-width:769px) {
-  #mega-menu-wrap-max_mega_menu_1 #mega-menu-max_mega_menu_1 li.mega-menu-flyout li.mega-menu-item a.mega-menu-link>span.mega-indicator:after {
+  #mega-menu-wrap-max_mega_menu_1 #mega-menu-max_mega_menu_1 li.mega-menu-flyout li.mega-menu-item a.mega-menu-link>span.fa fa-chevron-down mega-indicator:after {
     content: ""
   }
 
@@ -6494,11 +6494,11 @@ form.submitting .wpcf7-spinner {
     text-align: right
   }
 
-  #mega-menu-wrap-max_mega_menu_1 #mega-menu-max_mega_menu_1 li.mega-menu-flyout.mega-align-bottom-right li.mega-menu-item a.mega-menu-link>span.mega-indicator {
+  #mega-menu-wrap-max_mega_menu_1 #mega-menu-max_mega_menu_1 li.mega-menu-flyout.mega-align-bottom-right li.mega-menu-item a.mega-menu-link>span.fa fa-chevron-down mega-indicator {
     float: left
   }
 
-  #mega-menu-wrap-max_mega_menu_1 #mega-menu-max_mega_menu_1 li.mega-menu-flyout.mega-align-bottom-right li.mega-menu-item a.mega-menu-link>span.mega-indicator:after {
+  #mega-menu-wrap-max_mega_menu_1 #mega-menu-max_mega_menu_1 li.mega-menu-flyout.mega-align-bottom-right li.mega-menu-item a.mega-menu-link>span.fa fa-chevron-down mega-indicator:after {
     content: "";
     margin: 0 6px 0 0
   }
